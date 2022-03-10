@@ -12,13 +12,27 @@
   "private": true,
   "keywords": [],
   "scripts": {
-    "dev": "ts-node-dev src/app.ts"
+    "dev": "ts-node-dev src/app.ts",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    }
   },
   "dependencies": {
     "express": "^4.17.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
     "@types/express": "^4.17.13",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.3.0",
+    "husky": "^7.0.4",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.2"
   }
