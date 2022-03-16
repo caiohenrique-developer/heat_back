@@ -1,0 +1,50 @@
+{
+  "name": "heat_back",
+  "description": "📝 Projeto desenvolvido na missão Impulse do NLW Heat.    DoWhile2021 é o layout de uma aplicação onde as pessoas podem compartilhar suas expectativas sobre o DoWhile.",
+  "main": "index.js",
+  "repository": "git@github.com:caiohenrique-developer/heat_back.git",
+  "bugs": {
+    "url": "https://github.com/caiohenrique-developer/heat_back/issues"
+  },
+  "author": "Caio Henrique <caiohenrique.developer@gmail.com> (https://github.com/caiohenrique-developer)",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "keywords": [],
+  "scripts": {
+    "dev": "ts-node-dev --exit-child src/server.ts",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    }
+  },
+  "dependencies": {
+    "@prisma/client": "3.10.0",
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@types/axios": "^0.14.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/socket.io": "^3.0.2",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.3.0",
+    "husky": "^7.0.4",
+    "prisma": "^3.10.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
+  }
+}
